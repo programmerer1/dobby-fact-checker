@@ -1,4 +1,4 @@
-A browser extension for Chrome and Brave to verify whether a news story is fake or not, as well as provide explanations for the news.
+A browser extension for Chrome and Brave to verify whether a news is fake or not, as well as provide explanations for the news.
 
 You can download and install the extension on your browser: 
 
