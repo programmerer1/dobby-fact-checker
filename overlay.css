@@ -1,4 +1,4 @@
-#ai-overlay-container {
+#dobby-checker-ai-overlay-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,23 +15,23 @@
     font-family: Arial, sans-serif;
 }
 
-#ai-overlay-container span,
-#ai-overlay-container div,
-#ai-overlay-container p,
-#ai-overlay-container a,
-#ai-overlay-container li,
-#ai-overlay-container strong {
+#dobby-checker-ai-overlay-container span,
+#dobby-checker-ai-overlay-container div,
+#dobby-checker-ai-overlay-container p,
+#dobby-checker-ai-overlay-container a,
+#dobby-checker-ai-overlay-container li,
+#dobby-checker-ai-overlay-container strong {
     color: #000;
 }
 
 /* Показываем модалку */
-#ai-overlay-container.show {
+#dobby-checker-ai-overlay-container.show {
     opacity: 1;
     visibility: visible;
 }
 
 /* Содержимое окна */
-#ai-content {
+#dobby-checker-ai-content {
     background: #fff;
     padding: 20px 25px;
     border-radius: 10px;
@@ -43,7 +43,7 @@
 }
 
 /* Заголовок */
-#ai-header {
+#dobby-checker-ai-header {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -52,7 +52,7 @@
 }
 
 /* Кнопка закрытия */
-#ai-close {
+#dobby-checker-ai-close {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -65,39 +65,39 @@
     transition: color 0.2s;
 }
 
-#ai-close:hover {
+#dobby-checker-ai-close:hover {
     color: #000;
 }
 
 /* Общие поля */
-.ai-field {
+.dobby-checker-ai-field {
     margin-bottom: 12px;
     line-height: 1.4;
 }
 
-.ai-field strong {
+.dobby-checker-ai-field strong {
     display: block;
     margin-bottom: 4px;
     font-weight: bold;
 }
 
 /* Ошибки */
-#ai-error {
+#dobby-checker-ai-error {
     color: red;
     font-weight: bold;
 }
 
 /* Список источников */
-#ai-sources ul {
+#dobby-checker-ai-sources ul {
     padding-left: 20px;
     margin: 0;
 }
 
-#ai-sources li {
+#dobby-checker-ai-sources li {
     list-style-type: disc;
 }
 
 /* Explanation */
-#ai-explanation span {
+#dobby-checker-ai-explanation span {
     display: block;
 }

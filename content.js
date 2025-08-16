@@ -1,5 +1,5 @@
 async function initOverlay() {
-    if (!document.getElementById("ai-overlay-container")) {
+    if (!document.getElementById("dobby-checker-ai-overlay-container")) {
         const html = await fetch(chrome.runtime.getURL("overlay.html")).then(r => r.text());
         document.body.insertAdjacentHTML("beforeend", html);
 
@@ -11,14 +11,14 @@ async function initOverlay() {
 }
 
 function showResult(data) {
-    const overlay = document.getElementById("ai-overlay-container");
+    const overlay = document.getElementById("dobby-checker-ai-overlay-container");
     if (!overlay) return;
 
-    const errorEl = document.getElementById("ai-error");
-    const probEl = document.getElementById("ai-probability");
-    const reasonEl = document.getElementById("ai-reason");
-    const sourcesEl = document.getElementById("ai-sources");
-    const explanationEl = document.getElementById("ai-explanation");
+    const errorEl = document.getElementById("dobby-checker-ai-error");
+    const probEl = document.getElementById("dobby-checker-ai-probability");
+    const reasonEl = document.getElementById("dobby-checker-ai-reason");
+    const sourcesEl = document.getElementById("dobby-checker-ai-sources");
+    const explanationEl = document.getElementById("dobby-checker-ai-explanation");
 
     [errorEl, probEl, reasonEl, sourcesEl, explanationEl].forEach(el => el.style.display = "none");
 
@@ -61,7 +61,7 @@ chrome.runtime.onMessage.addListener(async (message) => {
 });
 
 document.addEventListener("click", (e) => {
-    if (e.target.id === "ai-close") {
-        document.getElementById("ai-overlay-container").classList.remove("show");
+    if (e.target.id === "dobby-checker-ai-close") {
+        document.getElementById("dobby-checker-ai-overlay-container").classList.remove("show");
     }
 });
